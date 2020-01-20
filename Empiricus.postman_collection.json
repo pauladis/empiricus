@@ -1,0 +1,124 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Empiricus",
+		"_postman_id": "0919faef-92d5-94ea-5bfe-1df75aa58142",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ticker",
+			"request": {
+				"url": "http://127.0.0.1:5000/ticker",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/ticker",
+			"request": {
+				"url": "http://127.0.0.1:5000/ticker",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"message\": \"ticker inexistente\"\n}\n\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/ticker/{ticker}",
+			"request": {
+				"url": "http://127.0.0.1:5000/ticker/ITUB3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ticker\": \"ITUB4\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/interrompidos",
+			"request": {
+				"url": "http://127.0.0.1:5000/interrompidos",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ticker\": \"ITUB4\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/valor",
+			"request": {
+				"url": "http://127.0.0.1:5000/valor",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/valor/{ticker}",
+			"request": {
+				"url": "http://127.0.0.1:5000/valor/PETR4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/valor",
+			"request": {
+				"url": "http://127.0.0.1:5000/valor",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ticker\": \"PETR4\",\n\t\"valor\" : 13.43\n}\n\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
